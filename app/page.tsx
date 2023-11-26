@@ -8,7 +8,7 @@ import CursorFollower from '@/components/CursorFollower';
 
 export default function Home () {
   return (
-      <main className="flex flex-col items-center px-4">
+      <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
         <AboutSection />
         {/* <ExperienceSection />
         <ProjectsSection /> */}

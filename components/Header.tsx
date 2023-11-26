@@ -1,5 +1,6 @@
 // components/Header.tsx
 import React from 'react';
+import Navigation from './Navigation';
 
 const Header: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const Header: React.FC = () => {
         <p className="mt-4 max-w-xs leading-normal text-slate-200">Tech Enthusiast</p>
         {/* Add any other content for the header */}
       </div>
+      <Navigation />
       {/* Add social media icons or navigation links here */}
     </header>
   );
