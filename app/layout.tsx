@@ -1,29 +1,30 @@
 // app/layout.tsx
 import React from 'react';
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import CursorFollower from '../components/cursorFollow';
 import './globals.css';
+import CursorFollower from '@/components/CursorFollower';
+import Header from '@/components/Header';
+import Navigation from '@/components/Navigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Abhishek | Portfolio',
+export const metadata = {
+  title: 'Abhishek Sinha',
   description: 'Abhishek is a full-stack developer with 2 years of experience.',
 };
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
+export default function RootLayout ({ children,}: { children: React.ReactNode; }) {
   return (
-    <html lang="en">
-      <body
-        style={{ backgroundColor: '#0f172a' }}
-        className={`${inter.className}`}
-      >
+    <html lang="en" className="!scroll-smooth">
+      <body style={{ backgroundColor: '#0f172a'}} className={`${inter.className}`}>
+      <CursorFollower />
+      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <Header />
+        <Navigation />
         {children}
-        <CursorFollower />
+        </div>
       </body>
     </html>
   );
 };
 
-export default RootLayout;

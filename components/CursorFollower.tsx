@@ -1,4 +1,4 @@
-// components/CursorFollower.js
+// components/CursorFollower.tsx
 "use client";
 import React, { useState, useEffect } from 'react';
 
@@ -7,7 +7,7 @@ const CursorFollower = () => {
   const [fadeOpacity, setFadeOpacity] = useState(1);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
+    const handleMouseMove = (event: MouseEvent) => {
       setCursorPosition({ x: event.clientX, y: event.clientY });
       setFadeOpacity(1);
     };
@@ -27,15 +27,13 @@ const CursorFollower = () => {
 
   return (
     <div
-      className="absolute pointer-events-none"
+      className="fixed inset-0 z-30 transition duration-300 lg:absolute pointer-events-none"
       style={{
-        left: cursorPosition.x - 450,
-        top: cursorPosition.y - 450,
-        width: '900px',
-        height: '900px',
-        borderRadius: '100%',
+        background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        width: '100vw',
+        height: '100vh',
         opacity: fadeOpacity,
-        background: `radial-gradient(circle, #112240, transparent ${fadeOpacity * 70}%)`,
+        pointerEvents: 'none',
         transition: 'opacity 0.5s ease',
       }}
     />
