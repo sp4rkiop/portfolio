@@ -9,7 +9,7 @@ const AboutSection: React.FC = () => {
       </div>
       <div>
         <p className="mb-4">
-        Passionate about understanding the mechanics of things since childhood, I transitioned from dismantling toys to exploring software and web development. With a background in open source, I've evolved to self-deploying SAAS and PAAS like{' '}
+        Passionate about understanding the mechanics of things since childhood, I transitioned from dismantling toys to exploring software and web development. With a background in open source, I&apos;ve evolved to self-deploying SAAS and PAAS like{' '}
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://nextcloud.com/" target="_blank" rel="noreferrer">NextCloud</a>, {' '}
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://www.portainer.io/" target="_blank" rel="noreferrer">Portainer</a>, {' '}
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://nginxproxymanager.com/" target="_blank" rel="noreferrer">NPM</a>, contributed in covid with vaccine availability bot{' '}
