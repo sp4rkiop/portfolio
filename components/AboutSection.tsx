@@ -9,7 +9,9 @@ const AboutSection: React.FC = () => {
       </div>
       <div>
         <p className="mb-4">
-        Passionate about understanding the mechanics of things since childhood, I transitioned from dismantling toys to exploring software and web development. With a background in open source, I&apos;ve evolved to self-deploying SAAS and PAAS like{' '}
+          Full-stack web developer with 3 years of hands-on experience in frontend, backend, DevOps, and cloud development. 
+          Proven ability to design and deploy scalable, AI-integrated applications using modern frameworks and cloud platforms.
+          With a background in open source, I&apos;ve evolved to self-deploying SAAS and PAAS like{' '}
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://nextcloud.com/" target="_blank" rel="noreferrer">NextCloud</a>, {' '}
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://www.portainer.io/" target="_blank" rel="noreferrer">Portainer</a>, {' '}
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://nginxproxymanager.com/" target="_blank" rel="noreferrer">NPM</a>, contributed in covid with vaccine availability bot{' '}
@@ -17,8 +19,7 @@ const AboutSection: React.FC = () => {
           <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://github.com/SP4RKiOP/AutoIPV6forDuckDNS" target="_blank" rel="noreferrer">AutoIPV6forDuckDNS</a>.
         </p>
         <p className="mb-4">
-          My main focus these days is integrating LLMs with custom data, prompt engineering them{' '}
-          <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://github.com/SP4RKiOP/Azure-OpenAI-integration-with-db" target="_blank" rel="noreferrer">Azure-OpenAI-integration-with-db</a>.{' '}
+          My main focus these days is integrating LLMs with custom data and refining their behavior through prompt engineering.
         </p>
       </div>
     </section>

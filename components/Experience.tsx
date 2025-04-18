@@ -15,14 +15,26 @@ const Experience = () => {
           {/* Experience item 1 */}
           <li className="py-4 border-b border-slate-800 last:border-b-0">
             <div className="mb-2">
-              <h3 className="text-lg font-semibold text-slate-200">Cloud Engineer</h3>
-              <p className="text-sm text-slate-400">Insight | Remote | July 2022 - Current</p>
+              <h3 className="text-lg font-semibold text-slate-200">Cloud Engineer 2</h3>
+              <p className="text-sm text-slate-400">Insight | April 2024 - Current</p>
             </div>
             <p className="text-slate-300">
-              Got opportunity to show my skills by integrating AI to backend that helped in saving time of manual api building.
+              Designed scalable AI-driven solutions, including RESTful APIs, voice-enabled bots, and automated SQL query generation, 
+              leveraging Python, LangChain, Semantic Kernel, and Microsoft Graph API to optimize workflows, enhance user satisfaction, 
+              and achieve measurable performance improvements.
+            </p>
+          </li>
+          <li className="py-4 border-b border-slate-800 last:border-b-0">
+            <div className="mb-2">
+              <h3 className="text-lg font-semibold text-slate-200">Cloud Engineer</h3>
+              <p className="text-sm text-slate-400">Insight | July 2022 - April 2024</p>
+            </div>
+            <p className="text-slate-300">
+              Got opportunity to show my skills by integrating GenAI to backend that helped in saving time of manual api building.
               Developed, maintained projects. Learned CI/CD to automate deployments.
             </p>
           </li>
+          
 
           {/* Experience item 2 */}
           <li className="py-4 border-b border-slate-800 last:border-b-0">
@@ -38,9 +50,9 @@ const Experience = () => {
           {/* Add more experience items as needed */}
 
         </ol>
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <a
-            className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
+            className="inline-flex items-center leading-tight text-slate-200 font-semibold group"
             aria-label="View Full Résumé"
             href="/resume.pdf"
           >
@@ -68,7 +80,7 @@ const Experience = () => {
               </span>
             </span>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
