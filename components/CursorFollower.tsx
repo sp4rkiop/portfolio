@@ -27,7 +27,7 @@ const CursorFollower = () => {
 
   return (
     <div
-      className="fixed inset-0 z-30 transition duration-300 lg:absolute pointer-events-none"
+      className="fixed inset-0 z-30 transition duration-300 pointer-events-none"
       style={{
         background: `radial-gradient(600px at ${cursorPosition.x}px ${cursorPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
         width: '100vw',

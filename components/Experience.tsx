@@ -16,25 +16,39 @@ const Experience = () => {
           <li className="py-4 border-b border-slate-800 last:border-b-0">
             <div className="mb-2">
               <h3 className="text-lg font-semibold text-slate-200">Cloud Engineer 2</h3>
-              <p className="text-sm text-slate-400">Insight | April 2024 - Current</p>
+              <p className="text-sm text-slate-400">
+                <a href="https://www.insight.com" className="text-blue-400 hover:underline">Insight</a> | Jan 2022 - Current
+              </p>
             </div>
             <p className="text-slate-300">
-              Designed scalable AI-driven solutions, including RESTful APIs, voice-enabled bots, and automated SQL query generation, 
-              leveraging Python, LangChain, Semantic Kernel, and Microsoft Graph API to optimize workflows, enhance user satisfaction, 
-              and achieve measurable performance improvements.
+              {[
+                "Built an AI-powered resume screener that reduced manual screening by 40%, using Azure AI Search and Semantic Kernel.",
+                "Developed a conversational AI platform using Semantic Kernel and RAG. Built with .NET backend and Angular frontend, secured by Microsoft Entra ID.",
+                "Developed Natural Language to SQL queries agent with Python Langchain, reducing manual API creation time by 50%.",
+                "Automated email parsing to extract business insights using NLP, reducing reporting time.",
+                "Recognized for building resume screening AI tool that saved 30+ hours/month.",
+                "Recognized for promoting AI tools within the SDLC, leading to a 20% increase in workflow efficiency."
+              ].map((bullet, index) => (
+                <span key={index}>
+                  • {bullet}
+                  <br />
+                </span>
+              ))}
             </p>
           </li>
-          <li className="py-4 border-b border-slate-800 last:border-b-0">
+          {/* <li className="py-4 border-b border-slate-800 last:border-b-0">
             <div className="mb-2">
               <h3 className="text-lg font-semibold text-slate-200">Cloud Engineer</h3>
-              <p className="text-sm text-slate-400">Insight | July 2022 - April 2024</p>
+              <p className="text-sm text-slate-400">
+                <a href="https://www.insight.com" className="text-blue-400 hover:underline">Insight</a> | Jan 2022 - April 2024
+              </p>
             </div>
             <p className="text-slate-300">
               Got opportunity to show my skills by integrating GenAI to backend that helped in saving time of manual api building.
               Developed, maintained projects. Learned CI/CD to automate deployments.
             </p>
-          </li>
-          
+          </li> */}
+
 
           {/* Experience item 2 */}
           <li className="py-4 border-b border-slate-800 last:border-b-0">

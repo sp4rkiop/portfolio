@@ -13,9 +13,9 @@ export const metadata = {
   description: 'Abhishek is a full-stack developer with 2 years of experience.',
 };
 
-export default function RootLayout ({ children,}: { children: React.ReactNode; }) {
+export default function RootLayout({ children, }: { children: React.ReactNode; }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth text-justify">
       <body className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
         <div>
           <div className="relative">
